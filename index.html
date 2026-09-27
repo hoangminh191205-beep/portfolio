@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title><!-- TODO: your name -->Hoang Minh | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="#home" class="brand">
+        <!-- TODO: replace with your own photo -->
+        <img src="me.png" alt="Hoang Minh" class="brand-photo" />
+        <span><!-- TODO: your name -->Hoang Minh</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav id="site-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Hello, I'm</p>
+        <h1><!-- TODO: your name -->Hoang Minh</h1>
+        <h2 class="role"><!-- TODO: your title -->University Student</h2>
+        <p class="location"><!-- TODO: your city -->Ha Noi, Vietnam</p>
+        <p class="tagline">
+          <!-- TODO: one to two sentences about what you do -->
+          Building clean, responsive websites with Java and JavaWeb,
+          and learning React as I grow.
+        </p>
+        <div class="cta-row">
+          <a href="#projects" class="btn btn-primary">View my work</a>
+          <!-- TODO: link this to your real resume PDF, or delete the button -->
+          <a href="resume.pdf" class="btn btn-ghost">Download resume</a>
+        </div>
+      </div>
+      <img src="me.png" alt="Hoang Minh" class="hero-photo" />
+    </div>
+
+    <div class="wrap stats-row">
+      <div class="stat"><span class="stat-num" data-target="6">0</span>+<p>Projects</p></div>
+      <div class="stat"><span class="stat-num" data-target="1">0</span>+<p>Years learning</p></div>
+      <div class="stat"><span class="stat-num" data-target="8">0</span>+<p>Technologies</p></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="wrap">
+      <p class="eyebrow">About</p>
+      <h2>Who I am</h2>
+      <p class="section-text">
+        <!-- TODO: write 2–4 sentences: background, what you're learning, what kind of work you enjoy -->
+        I'm a student learning Code. I'm currently focused on HTML, CSS, and
+        JavaScript fundamentals, with an interest in React.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="wrap">
+      <p class="eyebrow">Expertise</p>
+      <h2>My skills</h2>
+      <div class="pill-row">
+        <!-- TODO: edit this list to match your real skills -->
+        <span class="pill">Java</span>
+        <span class="pill">JavaWeb</span>
+ 
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="wrap">
+      <p class="eyebrow">Academic</p>
+      <h2>Education</h2>
+      <ul class="timeline">
+        <!-- TODO: replace with your real education history -->
+        <li>
+          <span class="timeline-date">2023 – Present</span>
+          <h3>JavaWeb Development Program</h3>
+          <p class="timeline-org">FPT University</p>
+          <p>Coursework in Java And JavaWeb workflows.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+ 
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="wrap">
+      <p class="eyebrow">Connect</p>
+      <h2>Get in touch</h2>
+      <p class="section-text">I'm always open to new opportunities and collaborations. Feel free to reach out.</p>
+      <form class="contact-form" id="contact-form">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-note" id="form-note" role="status"></p>
+      </form>
+      <ul class="contact-links">
+        <!-- TODO: replace with your real links -->
+        <li><a href="mailto:you@example.com">Email</a></li>
+        <li><a href="https://github.com/hoangminh191205-beep" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/USERNAME" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> <!-- TODO: your name -->Nguyen Van A. All rights reserved.</p>
+  </footer>
+
+  <!-- Modal for project details -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+      <p class="modal-tags" id="modal-tags"></p>
+      <a id="modal-link" href="#" target="_blank" rel="noopener" class="btn btn-primary">View project</a>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
